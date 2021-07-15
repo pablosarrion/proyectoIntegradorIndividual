@@ -63,6 +63,11 @@ header ul li a {
     color: #000;
 }
 
+header ul li a:hover {
+    font-weight: 800;
+    color: #000;
+}
+
 header .form .input {
     background-color: #FFF;
     border: 1px solid #000;
@@ -332,6 +337,19 @@ footer section div p {
 /*----------------------------------------------------------*/
 
 @media (min-width: 769px) {
+ 
+     header nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header nav ul{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    } 
+ 
+ 
     main section div.products article {
         width: 22%;
         box-shadow: none;
