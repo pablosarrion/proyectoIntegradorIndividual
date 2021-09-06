@@ -46,16 +46,25 @@ header .form {
     display: flex;
     align-items: center;
     padding: 2px;
-    font-size: 11px;
+    font-size: 16px;
+    position: relative;
+    justify-content: space-around;
+}
+
+header nav{
+    display: none;
 }
 
 header nav {
+    display: none;
     font-size: 12px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 header ul li {
     list-style-type: none;
+    margin-right: 10px;
 }
 
 header ul li a {
@@ -73,14 +82,20 @@ header .form .input {
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 2px 2px 2px 5px;
+    font-size: 12px;
 }
 
 header .form .submit {
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
+    width: 4%;
+
+
+    position:absolute;
+    border: none;
+    margin-left: 10px;
 }
 
 div.burger-menu {
@@ -230,14 +245,17 @@ main.register input.reset:hover {
 footer section{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer section div {
     text-align: center;
     padding: 20px;
     color: #666;
-    width: 30%;
+    /*width: 30%;*/
+    width: 100%; 
 }
 
 /* Cuando paso el cursor por el DIV, debo cambiar el color del ICONO */
@@ -257,7 +275,8 @@ footer section div p {
 }
 
 .Copyright {
-    text-align: left;
+    text-align: center;
+    padding: 10px 0 20px 0;
 }
 
 @keyframes fa-user-shield{
@@ -296,14 +315,38 @@ footer section div p {
 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-/*----------------------     361     -----------------------*/
+/*----------------------     476     -----------------------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 
 
 /**FOOTER*/
 
-@media (min-width: 361px) {
+@media (min-width: 476px) {
+
+
+    div.top-header nav{
+        display: block;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    header nav ul{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    div.burger-menu {
+        display: none;
+    }
+
     main section article .description {
         display: block;
     }
@@ -338,16 +381,10 @@ footer section div p {
 
 @media (min-width: 769px) {
  
-     header nav{
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    header nav ul{
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-    } 
+
+
+
+
  
  
     main section div.products article {
